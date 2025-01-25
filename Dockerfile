@@ -1,6 +1,6 @@
-FROM quay.io/hermit/hermit-ser:latest
+FROM quay.io/hansadewmina/dew-md:latest
 
-RUN git clone https://github.com/A-d-i-t-h-y-a-n/hermit-bot /root/hermit-md
-WORKDIR /root/hermit-md/
+RUN git clone https://github.com/KING-HANSA/DEW-MD-NEW /root/DEW-MD-NEW
+WORKDIR /root/DEW-MD-NEW/
 RUN npm install
-CMD ["pm2-runtime", "ecosystem.config.js"]
+CMD ["node", "index.js"]
